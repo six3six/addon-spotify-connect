@@ -32,6 +32,9 @@ fi
 # Save writes
 options+=(--disable-audio-cache)
 
+# Event 
+options+=(--onevent "/etc/event.py")
+
 # Are we running in debug mode?
 if bashio::debug; then
   options+=(--verbose)
